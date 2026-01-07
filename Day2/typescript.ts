@@ -29,3 +29,20 @@ let multiType: number|string|boolean;
 multiType=20;
 multiType="Twenty";
 multiType=true;
+//8. Literal Type
+let statu: "success" | "error" | "loading";
+statu = "success"; // Hợp lệ
+//statu = "failed"; loi
+
+//9.Null vaf Undefined
+const data:{
+    id:number;
+    title:string;
+    description: string|null;
+    timeLearn?: number|undefined;
+}={
+    id:1,
+    title: "Learn Typescript",
+    description: null,
+    //timeLearn: undefinded;
+}
