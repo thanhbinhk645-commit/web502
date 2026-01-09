@@ -45,4 +45,14 @@ const data:{
     title: "Learn Typescript",
     description: null,
     //timeLearn: undefinded;
-}
+};
+data.timeLearn;//undefined
+data.description;//null
+
+//9.Unknown vaf Any
+
+let input: unknown="hello";
+//input.toLowerCase();//error
+//hay gap try catch axios=>cacth(error:unknown){as AxiosError}:message
+(input as string).toLowerCase();//Casting
+(<string>input).toLowerCase();//casting
